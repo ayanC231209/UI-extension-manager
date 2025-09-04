@@ -15,15 +15,15 @@
 </head>
 <body class="font-['Noto Sans'] bg-gradient-to-b from-[#EBF2FC] to-[#EEF8F9] h-screen pt-10">
 
-    <div class="flex  shadow-lg rounded-xl bg-white max-w-[80%] mx-auto  ">
+    <div class="flex  shadow-lg rounded-xl bg-white max-w-[95%] md:max-w-[80%] mx-auto  ">
      
         
         <div class="flex py-3 px-4 justify-between w-full">
             <div class="flex items-start"><img src="assets/images/logo.svg" alt=""></div>
-            <div class="shadow-lg bg-gray-300 dark:bg-gray-900 rounded-md hover:bg-gray-400 ">
-                <label class="swap swap-rotate">
+            <div class="shadow-lg bg-gray-300 dark:bg-gray-900 rounded-md hover:bg-gray-400 border-red-800">
+                <label class="swap swap-rotate focus:border-red-400 focus:border-2  focus:outline-none border-red-800">
                     <!-- this hidden checkbox controls the state -->
-                    <input type="checkbox" class="" />
+                    <input type="checkbox" class=" focus:border-red-400 focus:border-2  focus:outline-none border-red-800" />
                   
 
                      <!-- moon icon -->
@@ -37,6 +37,69 @@
         </div>
     </div>
 
+    <div class="flex justify-center items-center max-w-[95%] md:max-w-[80%]  mx-auto mt-12">
+      <div class="sm:flex justify-between w-full text-center items-center ">
+
+        <div class="text-black font-[700] text-2xl mb-4 sm:mb-0 ">
+          Extensions List
+          </div>
+          <div class="flex gap-7 text-[16px] font-[400] justify-center">
+           
+            <label class="cursor-pointer">
+              <input type="radio" name="choice" class="sr-only peer  " />
+              <div class="shadow-md px-4 py-2 bg-white rounded-4xl hover:bg-gray-300  peer-checked:bg-red-700 hover:peer-checked:bg-red-400 peer-checked:text-white  peer-focus:border-red-400 peer-focus:border-2  peer-focus:outline-none">
+                  All
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="choice" class="sr-only peer  " />
+              <div class="shadow-md px-4 py-2 bg-white rounded-4xl hover:bg-gray-300  peer-checked:bg-red-700 hover:peer-checked:bg-red-400 peer-checked:text-white  peer-focus:border-red-400 peer-focus:border-2  peer-focus:outline-none">
+                  Active
+              </div>
+            </label>
+              
+            <label class="cursor-pointer">
+              <input type="radio" name="choice" class="sr-only peer  " />
+              <div class="shadow-md px-4 py-2 bg-white rounded-4xl hover:bg-gray-300  peer-checked:bg-red-700 hover:peer-checked:bg-red-400 peer-checked:text-white  peer-focus:border-red-400 peer-focus:border-2  peer-focus:outline-none">
+                  Inactive
+              </div>
+            </label>
+      
+          </div>
+          
+          </div>
+      </div>
+      
+
+  <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-6 max-w-[95%] md:max-w-[80%] mx-auto">
+
+    <div class="card bg-base-100  shadow-sm rounded-xl array">
+     <div class="flex gap-2 px-5 py-4">
+
+      <img src="assets/images/logo-devlens.svg" alt="">
+      <div>
+        <h1 class="text-xl font-[500]">Devlens</h1>
+         <p class="text-[16px]">Lorem ipsum dolor sit amet.</p>
+      </div>
+     </div>
+
+      <div class="flex justify-between px-5 pb-5 mt-4 items-center">
+       <button class="shadow-md px-4 py-2 bg-white rounded-4xl hover:bg-red-700  hover:text-white border border-gray-400 focus:border-red-400 focus:border-[2px]  focus:outline-none">
+        Remove  
+       </button>
+       <div  class="">
+        <input
+        type="checkbox"
+        checked="checked"
+        class=" focus:border-2 focus:border-red-400 toggle text-white bg-gray-300 checked:bg-red-700 checked:text-white "
+      />
+       </div>
+      
+      </div>
+    </div>
+    
+   
+  </div>
   
 
 </body>
