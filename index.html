@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <title>Extension manager</title>
 </head>
-<body>
-    
+<body class="font-['Noto Sans'] bg-gradient-to-b from-[#EBF2FC] to-[#EEF8F9] h-screen pt-10">
+
+    <div class="flex  shadow-lg rounded-xl bg-white max-w-[80%] mx-auto  ">
+     
+        
+        <div class="flex py-3 px-4 justify-between w-full">
+            <div class="flex items-start"><img src="assets/images/logo.svg" alt=""></div>
+            <div class="shadow-lg bg-gray-300 dark:bg-gray-900 rounded-md hover:bg-gray-400 ">
+                <label class="swap swap-rotate">
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" class="" />
+                  
+
+                     <!-- moon icon -->
+                     <img src="assets/images/icon-moon.svg" alt=""  class="swap-off h-10 w-10 fill-current">
+                    <!-- sun icon -->
+                    <img src="assets/images/icon-sun.svg" alt="" class="swap-on h-10 w-10 fill-current">
+                  
+                   
+                  </label>
+            </div>
+        </div>
+    </div>
+
+  
+
 </body>
 </html>
